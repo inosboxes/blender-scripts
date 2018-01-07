@@ -25,40 +25,34 @@ def readJsonFile(path):
   with open(path, 'r') as content_file:
     return json.loads(content_file.read())
 
+def add_planet(radius, distance):
+  """docstring for add_planet"""
+  bpy.ops.mesh.primitive_ico_sphere_add(
+      subdivisions = 2,
+      size = radius,
+      location = (0.0, distance, 0.0),
+      rotation = (0.0, 0.0, 0.0));
 
 def add_object(self, context):
-  scale_x = self.scale.x
-  scale_y = self.scale.y
+
   planetaryData = readJsonFile(jsonFile)
-  sources = ["planets-physical-characteristics.html","planets-orbital-properties.html"]
-  # get following props diameter, mass, planet, rotation
-  physicalChars = planetaryData[0]
-  # get following props planet, distance, revolution
-  orbitalChars = planetaryData[2]
 
-  for planet in physicalChars:
-    print planet
+  """ A.U. in km"""
+  AU = float(149597870.7)
+  FACTOR = float(1000000)
 
-  verts = [Vector((-1 * scale_x, 1 * scale_y, 0)),
-      Vector((1 * scale_x, 1 * scale_y, 0)),
-      Vector((1 * scale_x, -1 * scale_y, 0)),
-      Vector((-1 * scale_x, -1 * scale_y, 0)),
-      ]
-
-  edges = []
-  faces = [[0, 1, 2, 3]]
-
-  mesh = bpy.data.meshes.new(name="New Object Mesh")
-  mesh.from_pydata(verts, edges, faces)
-  # useful for development when the mesh may be invalid.
-  # mesh.validate(verbose=True)
-  object_data_add(context, mesh, operator=self)
+  for name, properties in planetaryData.iteritems():
+    """ (A.U.) """
+    distance = ( float(properties.distance) * AU) / FACTOR
+    """ km """
+    radius = ( float(properties.diameter) / 2) / FACTOR
+    add_planet(radius, distance)
 
 
 class OBJECT_OT_add_object(Operator, AddObjectHelper):
-  """Create a new Mesh Object"""
+  """Create a new Planetary System"""
   bl_idname = "mesh.add_object"
-  bl_label = "Add Mesh Object"
+  bl_label = "Add Planetary System"
   bl_options = {'REGISTER', 'UNDO'}
 
   scale = FloatVectorProperty(
@@ -80,16 +74,14 @@ class OBJECT_OT_add_object(Operator, AddObjectHelper):
 def add_object_button(self, context):
   self.layout.operator(
       OBJECT_OT_add_object.bl_idname,
-      text="Add Object",
+      text="Add Planetary System",
       icon='PLUGIN')
 
 
   # This allows you to right click on a button and link to the manual
 def add_object_manual_map():
   url_manual_prefix = "https://docs.blender.org/manual/en/dev/"
-  url_manual_mapping = (
-      ("bpy.ops.mesh.add_object", "editors/3dview/object"),
-      )
+  url_manual_mapping = ( ("bpy.ops.mesh.add_object", "editors/3dview/object"),)
   return url_manual_prefix, url_manual_mapping
 
 
