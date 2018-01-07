@@ -1,0 +1,8 @@
+{
+  "generator-mocha-testable-class": {
+    "promptValues": {
+      "srcDir": "src",
+      "testDir": "test"
+    }
+  }
+}
