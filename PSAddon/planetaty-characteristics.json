@@ -1,1 +1,224 @@
-[{"source": "planets-orbital-properties.html", "data": [{"Planet": "Mercury", "distance": "0.387", "revolution": "87.969 d", "inclination": "7.005", "eccentricity": "0.2056"}, {"Planet": "Venus", "distance": "0.723", "revolution": "224.701 d", "inclination": "3.3947", "eccentricity": "0.0068"}, {"Planet": "Earth", "distance": "1.000", "revolution": "365.256 d", "inclination": "0.0000", "eccentricity": "0.0167"}, {"Planet": "Mars", "distance": "1.524", "revolution": "686.98 d", "inclination": "1.851", "eccentricity": "0.0934"}, {"Planet": "Jupiter", "distance": "5.203", "revolution": "11.862 y", "inclination": "1.305", "eccentricity": "0.0484"}, {"Planet": "Saturn", "distance": "9.537", "revolution": "29.457 y", "inclination": "2.484", "eccentricity": "0.0542"}, {"Planet": "Uranus", "distance": "19.191", "revolution": "84.011 y", "inclination": "0.770", "eccentricity": "0.0472"}, {"Planet": "Neptune", "distance": "30.069", "revolution": "164.79 y", "inclination": "1.769", "eccentricity": "0.0086"}, {"Planet": "Pluto", "distance": "39.482", "revolution": "247.68 y", "inclination": "17.142", "eccentricity": "0.2488"}]}, {"source": "planets-Atmospheres.html", "data": [{"Planet": "Mercury", "vesc(km/s)": "4.3", "distance(A.U.)": "0.387", "g(\u00d7gE)": "0.378"}, {"Planet": "Venus", "vesc(km/s)": "10.36", "distance(A.U.)": "0.723", "g(\u00d7gE)": "0.905"}, {"Planet": "Earth", "vesc(km/s)": "11.186", "distance(A.U.)": "1.000", "g(\u00d7gE)": "1.000"}, {"Planet": "Mars", "vesc(km/s)": "5.03", "distance(A.U.)": "1.524", "g(\u00d7gE)": "0.379"}, {"Planet": "Jupiter", "vesc(km/s)": "59.5", "distance(A.U.)": "5.203", "g(\u00d7gE)": "2.530"}, {"Planet": "Saturn", "vesc(km/s)": "35.5", "distance(A.U.)": "9.537", "g(\u00d7gE)": "1.065"}, {"Planet": "Uranus", "vesc(km/s)": "21.3", "distance(A.U.)": "19.191", "g(\u00d7gE)": "0.905"}, {"Planet": "Neptune", "vesc(km/s)": "23.5", "distance(A.U.)": "30.069", "g(\u00d7gE)": "1.14"}, {"Planet": "Pluto", "vesc(km/s)": "1.2", "distance(A.U.)": "39.482", "g(\u00d7gE)": "0.059"}]}, {"source": "planets-physical-Characteristics.html", "data": [{"oblateness": "0.000", "Diameter": "4879", "density": "5.427", "Planet": "Mercury", "Mass": "0.0553", "axis tilt": "~0", "rotation": "58.785 d", "mag. field": "0.0006"}, {"oblateness": "0.000", "Diameter": "12,104", "density": "5.243", "Planet": "Venus", "Mass": "0.815", "axis tilt": "177.36", "rotation": "243.686 d", "mag. field": "0.00"}, {"oblateness": "0.00335", "Diameter": "12,742", "density": "5.515", "Planet": "Earth", "Mass": "1.000", "axis tilt": "23.45", "rotation": "23.9345 h", "mag. field": "1.000"}, {"oblateness": "0.00648", "Diameter": "6779", "density": "3.933", "Planet": "Mars", "Mass": "0.107", "axis tilt": "25.19", "rotation": "24.6229 h", "mag. field": "0.00"}, {"oblateness": "0.06487", "Diameter": "139,822", "density": "1.326", "Planet": "Jupiter", "Mass": "317.83", "axis tilt": "3.13", "rotation": "9.9250 h", "mag. field": "19,519"}, {"oblateness": "0.09796", "Diameter": "116,464", "density": "0.687", "Planet": "Saturn", "Mass": "95.159", "axis tilt": "26.73", "rotation": "10.656 h", "mag. field": "578"}, {"oblateness": "0.02293", "Diameter": "50,724", "density": "1.270", "Planet": "Uranus", "Mass": "14.536", "axis tilt": "97.77", "rotation": "17.24 h", "mag. field": "47.9"}, {"oblateness": "0.01708", "Diameter": "49,244", "density": "1.638", "Planet": "Neptune", "Mass": "17.147", "axis tilt": "28.32", "rotation": "16.11 h", "mag. field": "27.0"}, {"oblateness": "0.000", "Diameter": "2390", "density": "1.750", "Planet": "Pluto", "Mass": "0.0021", "axis tilt": "122.53", "rotation": "6.405 d", "mag. field": "0.00"}]}]
+[
+    {
+        "data": [
+            {
+                "Planet": "Mercury",
+                "distance": "0.387",
+                "eccentricity": "0.2056",
+                "inclination": "7.005",
+                "revolution": "87.969 d"
+            },
+            {
+                "Planet": "Venus",
+                "distance": "0.723",
+                "eccentricity": "0.0068",
+                "inclination": "3.3947",
+                "revolution": "224.701 d"
+            },
+            {
+                "Planet": "Earth",
+                "distance": "1.000",
+                "eccentricity": "0.0167",
+                "inclination": "0.0000",
+                "revolution": "365.256 d"
+            },
+            {
+                "Planet": "Mars",
+                "distance": "1.524",
+                "eccentricity": "0.0934",
+                "inclination": "1.851",
+                "revolution": "686.98 d"
+            },
+            {
+                "Planet": "Jupiter",
+                "distance": "5.203",
+                "eccentricity": "0.0484",
+                "inclination": "1.305",
+                "revolution": "11.862 y"
+            },
+            {
+                "Planet": "Saturn",
+                "distance": "9.537",
+                "eccentricity": "0.0542",
+                "inclination": "2.484",
+                "revolution": "29.457 y"
+            },
+            {
+                "Planet": "Uranus",
+                "distance": "19.191",
+                "eccentricity": "0.0472",
+                "inclination": "0.770",
+                "revolution": "84.011 y"
+            },
+            {
+                "Planet": "Neptune",
+                "distance": "30.069",
+                "eccentricity": "0.0086",
+                "inclination": "1.769",
+                "revolution": "164.79 y"
+            },
+            {
+                "Planet": "Pluto",
+                "distance": "39.482",
+                "eccentricity": "0.2488",
+                "inclination": "17.142",
+                "revolution": "247.68 y"
+            }
+        ],
+        "source": "planets-orbital-properties.html"
+    },
+    {
+        "data": [
+            {
+                "Planet": "Mercury",
+                "distance(A.U.)": "0.387",
+                "g(\u00d7gE)": "0.378",
+                "vesc(km/s)": "4.3"
+            },
+            {
+                "Planet": "Venus",
+                "distance(A.U.)": "0.723",
+                "g(\u00d7gE)": "0.905",
+                "vesc(km/s)": "10.36"
+            },
+            {
+                "Planet": "Earth",
+                "distance(A.U.)": "1.000",
+                "g(\u00d7gE)": "1.000",
+                "vesc(km/s)": "11.186"
+            },
+            {
+                "Planet": "Mars",
+                "distance(A.U.)": "1.524",
+                "g(\u00d7gE)": "0.379",
+                "vesc(km/s)": "5.03"
+            },
+            {
+                "Planet": "Jupiter",
+                "distance(A.U.)": "5.203",
+                "g(\u00d7gE)": "2.530",
+                "vesc(km/s)": "59.5"
+            },
+            {
+                "Planet": "Saturn",
+                "distance(A.U.)": "9.537",
+                "g(\u00d7gE)": "1.065",
+                "vesc(km/s)": "35.5"
+            },
+            {
+                "Planet": "Uranus",
+                "distance(A.U.)": "19.191",
+                "g(\u00d7gE)": "0.905",
+                "vesc(km/s)": "21.3"
+            },
+            {
+                "Planet": "Neptune",
+                "distance(A.U.)": "30.069",
+                "g(\u00d7gE)": "1.14",
+                "vesc(km/s)": "23.5"
+            },
+            {
+                "Planet": "Pluto",
+                "distance(A.U.)": "39.482",
+                "g(\u00d7gE)": "0.059",
+                "vesc(km/s)": "1.2"
+            }
+        ],
+        "source": "planets-Atmospheres.html"
+    },
+    {
+        "data": [
+            {
+                "Diameter": "4879",
+                "Mass": "0.0553",
+                "Planet": "Mercury",
+                "axis tilt": "~0",
+                "density": "5.427",
+                "mag. field": "0.0006",
+                "oblateness": "0.000",
+                "rotation": "58.785 d"
+            },
+            {
+                "Diameter": "12,104",
+                "Mass": "0.815",
+                "Planet": "Venus",
+                "axis tilt": "177.36",
+                "density": "5.243",
+                "mag. field": "0.00",
+                "oblateness": "0.000",
+                "rotation": "243.686 d"
+            },
+            {
+                "Diameter": "12,742",
+                "Mass": "1.000",
+                "Planet": "Earth",
+                "axis tilt": "23.45",
+                "density": "5.515",
+                "mag. field": "1.000",
+                "oblateness": "0.00335",
+                "rotation": "23.9345 h"
+            },
+            {
+                "Diameter": "6779",
+                "Mass": "0.107",
+                "Planet": "Mars",
+                "axis tilt": "25.19",
+                "density": "3.933",
+                "mag. field": "0.00",
+                "oblateness": "0.00648",
+                "rotation": "24.6229 h"
+            },
+            {
+                "Diameter": "139,822",
+                "Mass": "317.83",
+                "Planet": "Jupiter",
+                "axis tilt": "3.13",
+                "density": "1.326",
+                "mag. field": "19,519",
+                "oblateness": "0.06487",
+                "rotation": "9.9250 h"
+            },
+            {
+                "Diameter": "116,464",
+                "Mass": "95.159",
+                "Planet": "Saturn",
+                "axis tilt": "26.73",
+                "density": "0.687",
+                "mag. field": "578",
+                "oblateness": "0.09796",
+                "rotation": "10.656 h"
+            },
+            {
+                "Diameter": "50,724",
+                "Mass": "14.536",
+                "Planet": "Uranus",
+                "axis tilt": "97.77",
+                "density": "1.270",
+                "mag. field": "47.9",
+                "oblateness": "0.02293",
+                "rotation": "17.24 h"
+            },
+            {
+                "Diameter": "49,244",
+                "Mass": "17.147",
+                "Planet": "Neptune",
+                "axis tilt": "28.32",
+                "density": "1.638",
+                "mag. field": "27.0",
+                "oblateness": "0.01708",
+                "rotation": "16.11 h"
+            },
+            {
+                "Diameter": "2390",
+                "Mass": "0.0021",
+                "Planet": "Pluto",
+                "axis tilt": "122.53",
+                "density": "1.750",
+                "mag. field": "0.00",
+                "oblateness": "0.000",
+                "rotation": "6.405 d"
+            }
+        ],
+        "source": "planets-physical-Characteristics.html"
+    }
+]
