@@ -19,13 +19,12 @@ from bpy_extras.object_utils import AddObjectHelper, object_data_add
 from mathutils import Vector
 import os
 
-CURRENT_FILE_PATH = __file__
-CURRENT_FILE_DIR = os.path.dirname(__file__)
+BASE_DIR = os.path.basename(bpy.data.filepath)
 JSON_FILE = 'planetaty-characteristics.json'
 
 def readJsonFile(filename):
   """docstring for readJsonFile"""
-  file_path = os.path.join(CURRENT_FILE_DIR, filename)
+  filename = os.path.join(BASE_DIR, filename)
   with open(file_path, 'r') as content_file:
     return json.loads(content_file.read())
 
