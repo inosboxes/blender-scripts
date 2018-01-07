@@ -2,7 +2,7 @@
     "earth": {
         "axis-tilt": "23.45",
         "density": "5.515",
-        "diameter": "12,742",
+        "diameter": "12742",
         "distance": "1.000",
         "eccentricity": "0.0167",
         "g": "1.000",
@@ -18,7 +18,7 @@
     "jupiter": {
         "axis-tilt": "3.13",
         "density": "1.326",
-        "diameter": "139,822",
+        "diameter": "139822",
         "distance": "5.203",
         "eccentricity": "0.0484",
         "g": "2.530",
@@ -48,7 +48,7 @@
         "vesc": "5.03"
     },
     "mercury": {
-        "axis-tilt": "~0",
+        "axis-tilt": "0",
         "density": "5.427",
         "diameter": "4879",
         "distance": "0.387",
@@ -66,7 +66,7 @@
     "neptune": {
         "axis-tilt": "28.32",
         "density": "1.638",
-        "diameter": "49,244",
+        "diameter": "49244",
         "distance": "30.069",
         "eccentricity": "0.0086",
         "g": "1.14",
@@ -98,7 +98,7 @@
     "saturn": {
         "axis-tilt": "26.73",
         "density": "0.687",
-        "diameter": "116,464",
+        "diameter": "116464",
         "distance": "9.537",
         "eccentricity": "0.0542",
         "g": "1.065",
@@ -114,7 +114,7 @@
     "uranus": {
         "axis-tilt": "97.77",
         "density": "1.270",
-        "diameter": "50,724",
+        "diameter": "50724",
         "distance": "19.191",
         "eccentricity": "0.0472",
         "g": "0.905",
@@ -130,7 +130,7 @@
     "venus": {
         "axis-tilt": "177.36",
         "density": "5.243",
-        "diameter": "12,104",
+        "diameter": "12104",
         "distance": "0.723",
         "eccentricity": "0.0068",
         "g": "0.905",
