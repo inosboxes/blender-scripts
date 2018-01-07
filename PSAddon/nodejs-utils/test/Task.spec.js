@@ -10,7 +10,7 @@ describe('"Task" module exports', function(){
   })
   it('should return instance of Object".', function() {
     let planets = Task();
-    debug(planets)
+    //debug(planets)
     expect(Task).to.be.instanceOf(Function)
   })
 })

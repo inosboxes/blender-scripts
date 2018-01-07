@@ -4,6 +4,9 @@ module.exports = function Task() {
   function readFile(path) {
     return fs.readFileSync(path, "utf8");
   }
+  function writeFile(path, content) {
+    return fs.writeFileSync(path, content,"utf8");
+  }
   function normalizedKey(key) {
     return key.replace(".", "").replace(' ','-');
   }
@@ -52,5 +55,7 @@ module.exports = function Task() {
     return result;
   }
   let data = readFile("./planetaty-characteristics.json");
-  return transform(JSON.parse(data));
+  let result =  transform(JSON.parse(data));
+  writeFile("./planetaty-characteristics-normal.json", JSON.stringify(result));
+  return result;
 };
