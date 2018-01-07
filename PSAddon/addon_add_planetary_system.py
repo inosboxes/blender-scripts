@@ -17,12 +17,16 @@ from bpy.types import Operator
 from bpy.props import FloatVectorProperty
 from bpy_extras.object_utils import AddObjectHelper, object_data_add
 from mathutils import Vector
+import os
 
-jsonFile = 'planetaty-characteristics.json'
+CURRENT_FILE_PATH = __file__
+CURRENT_FILE_DIR = os.path.dirname(__file__)
+JSON_FILE = 'planetaty-characteristics.json'
 
-def readJsonFile(path):
+def readJsonFile(filename):
   """docstring for readJsonFile"""
-  with open(path, 'r') as content_file:
+  file_path = os.path.join(CURRENT_FILE_DIR, filename)
+  with open(file_path, 'r') as content_file:
     return json.loads(content_file.read())
 
 def add_planet(radius, distance):
@@ -35,7 +39,7 @@ def add_planet(radius, distance):
 
 def add_object(self, context):
 
-  planetaryData = readJsonFile(jsonFile)
+  planetaryData = readJsonFile(JSON_FILE)
 
   """ A.U. in km"""
   AU = float(149597870.7)
