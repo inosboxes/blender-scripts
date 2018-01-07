@@ -34,6 +34,8 @@ module.exports = function Task() {
         }
         value = Number((value).toFixed(6))
         //debug(k,value + ' H', metric)
+      } else {
+        value = value.replace(',', '').replace('~','');
       }
       normalized[k] = value;
     });
