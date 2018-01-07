@@ -1,7 +1,7 @@
 # Usage
 
 ```
-python parse-file.py
+python convert-html-to-datastructs.py
 ```
 
 # Python deps
