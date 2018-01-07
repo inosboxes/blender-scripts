@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 from sets import Set
 import itertools
 from pprint import pprint
+import pickle
+import json
 
 def parseHtmlTableFile(path):
   """docstring for parseHtmlTableFile"""
@@ -43,10 +45,25 @@ def parseFiles(files):
     collection.append({'source': path, 'data': data})
   return collection
 
+
+def writeFile(path, data):
+  """docstring for writeFile"""
+  with open(path, "w") as outFile:
+    outFile.write(data)
+
 files = [
   'planets-orbital-properties.html',
   'planets-Atmospheres.html',
   'planets-physical-Characteristics.html'
 ]
 
-pprint(parseFiles(files))
+outFilename = 'planetaty-characteristics'
+pythonOutFile = outFilename + '.pickle.txt'
+jsonOutFile = outFilename + '.json'
+
+data = parseFiles(files)
+pythonData = pickle.dumps( data )
+jsonData = json.dumps( data )
+
+writeFile(pythonOutFile, pythonData)
+writeFile(jsonOutFile, jsonData)
