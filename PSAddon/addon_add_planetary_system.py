@@ -24,7 +24,7 @@ JSON_FILE = 'planetaty-characteristics.json'
 
 def readJsonFile(filename):
   """docstring for readJsonFile"""
-  filename = os.path.join(BASE_DIR, filename)
+  file_path = os.path.join(BASE_DIR, filename)
   with open(file_path, 'r') as content_file:
     return json.loads(content_file.read())
 
